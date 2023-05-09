@@ -1,0 +1,6 @@
+<div class="row">
+    <button (click)="gotToPage(pg+1)" class="page-button" [class.active]="(pg+1) === pagination.currentPage"
+        *ngFor="let pg of pagesArray">
+        {{pg+1}}
+    </button>
+</div>

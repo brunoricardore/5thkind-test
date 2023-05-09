@@ -1,0 +1,7 @@
+<div [class.active]="active" class="card">
+    <button class="close" (click)="onDelete.next(app)">X</button>
+    <div class="content" (click)="onClick.next(app)">
+        <h1>{{app.name}}</h1>
+        <h4>{{app.version}}</h4>
+    </div>
+</div>

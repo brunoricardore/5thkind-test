@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    place-content: center;
+
+    .app-space {
+        position: relative;
+        padding: 15px 100px;
+        background-color: #CECECE;
+
+        max-width: 450px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, 130px);
+        grid-template-rows: repeat(3, 150px);
+
+        app-pagination {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    .form {
+        margin-top: 30px;
+
+        form {
+            display: flex;
+            gap: 15px;
+        }
+    }
+
+    ul.errors {
+        list-style: none;
+        text-align: end;
+        color: #dd1122;
+        li {
+            font-weight: 600;
+        }
+    }
+}

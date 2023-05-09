@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    button.page-button {
+        background-color: #FFF;
+        border: 1px solid #BBB ;
+
+        &.active {
+            background-color: #3322bb;
+            color: #FFF;
+        }
+    }
+}
